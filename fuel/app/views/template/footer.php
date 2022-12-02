@@ -1,3 +1,3 @@
 <div class="footer">
-    &copy; Copyright <?php echo date('Y');?><?php echo $username; ?>
+    &copy; Copyright <?php echo date('Y');?>
 </div>
