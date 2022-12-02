@@ -1,25 +1,40 @@
 <?php
 /**
- * Fuel is a fast, lightweight, community driven PHP 5.4+ framework.
+ * Use this file to override global defaults.
  *
- * @package    Fuel
- * @version    1.9-dev
- * @author     Fuel Development Team
- * @license    MIT License
- * @copyright  2010 - 2019 Fuel Development Team
- * @link       https://fuelphp.com
- */
-
-/**
- * -----------------------------------------------------------------------------
- *  Global database settings
- * -----------------------------------------------------------------------------
- *
- *  Set database configurations here to override environment specific
- *  configurations
- *
+ * See the individual environment DB configs for specific config information.
  */
 
 return array(
+    'active' => 'mysqli',
 
+    'pdo' => array(
+        'type'           => 'pdo',
+        'connection'     => array(
+            'dsn'        => 'mysql:host=localhost;dbname=framework',
+            'username'       => 'root',
+            'password'       => 'root',
+            'persistent'     => false,
+            'compress'       => false,
+        ),
+        'table_prefix' => '',
+        'charset'      => 'utf8',
+        'caching'      => false,
+        'profiling'    => true,
+    ),
+    'mysqli' => array(
+        'type'           => 'mysqli',
+        'connection'     => array(
+            'hostname' => 'localhost',
+            'database' => 'framework',
+            'username'       => 'root',
+            'password'       => 'root',
+            'persistent'     => false,
+            'compress'       => false,
+        ),
+        'table_prefix' => '',
+        'charset'      => 'utf8',
+        'caching'      => false,
+        'profiling'    => true,
+    ),
 );

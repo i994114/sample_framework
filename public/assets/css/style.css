@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    color: #545454;
+    font-size: 20px;
+}
+
+.site-width{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 80px;
+    background: #333;
+    position: relative;
+}
+/*コンテナ*/
+.ctn-form{
+    width: 500px;
+    margin: 100px auto;
+}
+/*form*/
+form {
+    overflow: hidden;
+}
+form>table{
+    width: 100%;
+}
+form>table tr>td:first-child{
+    width: 40%;
+}
+.area-error-msg{
+    color: lightcoral;
+}
+input[type="text"],input[type="password"],input[type="email"],textarea{
+    background: #f5f4f3;
+    border: none;
+    width: 100%;
+}
+input[type="text"],input[type="password"],input[type="email"] {
+    color: #545454;
+    height: 60px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #3d3938;
+    color: white;
+    float: right;
+    width: 150px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background: #111;
+    cursor: pointer;
+}
+
+a {
+    color: #545454;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.err_msg {
+    color: #ff4d4b;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background: #eee;
+}
+/* msg */
+.alert-msg{
+    display: none;
+    line-height: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+.alert-msg.success{
+    background: #01b3e6;
+}
+.alert-msg.err{
+    background: #fe8a8b;
+}
+/*その他*/
+.vartical-center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
